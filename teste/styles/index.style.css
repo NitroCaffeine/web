@@ -1,0 +1,92 @@
+body{
+    background-color: #121414;
+}
+
+.container-fluid{
+    height: 100vh;
+}
+
+.row {
+    background-color: #121414;
+}
+
+.col-md {
+    height: 15vh;
+    padding: 2%;
+    padding-bottom: 0;
+    background-color: #121414;
+    border-bottom: 1px solid #29292E;
+}
+
+h1:not([id="merchã"]) {
+    position: absolute;
+    margin-left: 3%;
+    color: #E1E1E6;
+    font-family: 'Roboto';
+    font-weight: 700
+}
+
+
+button{
+    border: 0;
+}
+
+.nav-link,
+.nav-link:focus {
+    color: #A8A8B3;
+}
+
+.nav-link:hover {
+
+    color: #EAA416;
+}
+
+#main {
+    height: 100vh;
+    padding: 5%;
+    background-color: #121414;
+}
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+.container .row{
+    height: 100vh;
+}
+
+h4{
+    color: #E1E1E6;
+}
+
+#content{
+    margin-top: 5%;
+    height: 30vh;
+}
+
+#merchã{
+    color: #E1E1E6;
+    font-weight: 700;
+    size: 80px;
+    line-height: 80px;
+    height: 10%;
+}
+h1 p{
+    color: #5A38FD;
+}
+
+#get_started{
+    width: 15vw;
+    height: 8%;
+   border-radius: 20px;
+    margin-top: 5%;
+   
+    background-color: #EAA416;
+}
+
+img{
+    margin-left: 15%;
+    width: 50vw;
+    height: 80vh;
+}
+
