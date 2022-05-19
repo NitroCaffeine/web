@@ -1,6 +1,6 @@
-body{
+/*  body{
     background-color: #121414;
-}
+}  */
 
 .container-fluid{
     height: 100vh;
@@ -51,8 +51,10 @@ button{
     padding: 0;
 }
 
-.container .row{
-    height: 100vh;
+
+
+#row{
+    height: 100%;
 }
 
 h4{
@@ -79,8 +81,7 @@ h1 p{
     width: 15vw;
     height: 8%;
    border-radius: 20px;
-    margin-top: 5%;
-   
+    margin-top: 5%; 
     background-color: #EAA416;
 }
 
