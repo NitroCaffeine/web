@@ -43,3 +43,6 @@ class TCC(models.Model):
     resumo = models.TextField()
     arquivo = models.FileField(upload_to='tccs')
     palavras_chave = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.titulo

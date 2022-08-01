@@ -76,13 +76,13 @@ WSGI_APPLICATION = 'trabalho.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'tcc',
-    #     'USER': 'postgres',
-    #     'PASSWORD': '123456',
-    #     'HOST': 'localhost'
-    # }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tcc',
+        'USER': 'postgres',
+        'PASSWORD': '123456',
+        'HOST': 'localhost'
+     }
 }
 
 
