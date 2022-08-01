@@ -11,5 +11,10 @@
     <h1>teste</h1>
     <a class="nav-link" href="{% url 'usuarios:login' %}">Entrar</a>
     <a class="nav-link" href="{% url 'usuarios:logout' %}">Sair</a>
+    {% if request.user.is_authenticated %}
+        <p>Está logado {{ request.user.username }}</p>
+    {% else %}
+        <p>não está</p>
+    {% endif %}
 </body>
 </html>
