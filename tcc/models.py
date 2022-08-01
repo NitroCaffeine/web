@@ -36,13 +36,13 @@ class Curso(models.Model):
 
 class TCC(models.Model):
     titulo = models.CharField(max_length=100)
-    autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
-    orientador = models.ForeignKey(Orientador, on_delete=models.CASCADE)
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
     ano_documento = models.IntegerField()
     resumo = models.TextField()
     arquivo = models.FileField(upload_to='tccs')
     palavras_chave = models.CharField(max_length=200)
+    autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
+    orientador = models.ForeignKey(Orientador, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.titulo
