@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Orientador(models.Model):
 
@@ -14,7 +15,7 @@ class Orientador(models.Model):
 class Autor(models.Model):
     primeiro_nome = models.CharField(max_length=40)
     ultimo_nome = models.CharField(max_length=40)
-    foto = models.ImageField(upload_to='fotos')
+    foto = models.ImageField(upload_to='fotos', max_length=200, null=True, blank=True)
 
     def __str__(self):
         return self.primeiro_nome
@@ -22,13 +23,13 @@ class Autor(models.Model):
 
 class Curso(models.Model):
     cursos = (
-        ('B', 'Bacharelado'),
-        ('L', 'Licenciatura'),
-        ('T', 'Tecnólogo'),
+        ('Bacharelado', 'Bacharelado'),
+        ('Licenciatura', 'Licenciatura'),
+        ('Tecnólogo', 'Tecnólogo'),
     )
 
     nome = models.CharField(max_length=50)
-    modalidade = models.CharField(max_length=1, choices=cursos, blank=False, null=False)
+    modalidade = models.CharField(max_length=20, choices=cursos, blank=False, null=False)
 
     def __str__(self):
         return self.nome
