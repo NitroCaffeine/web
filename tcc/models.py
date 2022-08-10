@@ -22,13 +22,13 @@ class Autor(models.Model):
 
 class Curso(models.Model):
     cursos = (
-        ('B', 'Bacharelado'),
-        ('L', 'Licenciatura'),
-        ('T', 'Tecnólogo'),
+        ('Bacharelado', 'Bacharelado'),
+        ('Licenciatura', 'Licenciatura'),
+        ('Tecnólogo', 'Tecnólogo'),
     )
 
     nome = models.CharField(max_length=50)
-    modalidade = models.CharField(max_length=1, choices=cursos, blank=False, null=False)
+    modalidade = models.CharField(max_length=30, choices=cursos, blank=False, null=False)
 
     def __str__(self):
         return self.nome
