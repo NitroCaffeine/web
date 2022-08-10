@@ -1,10 +1,13 @@
+<<<<<<< HEAD
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 
-from .models import TCC, Autor
 from . import forms
-# Create your views here.
+from .models import TCC, Autor, Curso, Orientador
+
+
+>>>>>>> 60ffc6789874fbc16bf0d027fa3a8852ffa59f87
 
 def home(request):
     return render(request, 'index.html')
@@ -27,11 +30,12 @@ def criar(request, model):
         form = form()  
     return render(request,'criar_tcc.html',{'form':form, 'model': model.capitalize()})
 
+def listar(request, model):
+    if model.lower() == 'tcc':
+        class_model = eval('TCC')
+    else:
+        class_model = eval(f'{model.capitalize()}')
 
-# def atualizar(request,model):
-#     form = eval(f'forms.{model.capitalize()}Form')
-#     if request.method == "POST":
-
-
- 
+    consultas = class_model.objects.all()
+    return render(request, f'{model.lower()}.html', {'consultas':consultas})
 

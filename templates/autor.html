@@ -1,0 +1,7 @@
+{% load static %}
+
+{% for consulta in consultas %}
+    <p>{{consulta.primeiro_nome}}</p>
+    <p>{{consulta.ultimo_nome}}</p>
+    <img src="{{consulta.foto}}">
+{% endfor %}
