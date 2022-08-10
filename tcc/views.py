@@ -34,7 +34,7 @@ def listar(request, model):
         class_model = eval(f'{model.capitalize()}')
 
     consultas = class_model.objects.all()
-    return render(request, f'{model.lower()}.html', {'consultas':consultas})
+    return render(request, f'listar/{model.lower()}.html', {'consultas':consultas})
 
 def atualizar(request, model, id):
     if model.lower() == 'tcc':

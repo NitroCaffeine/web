@@ -21,7 +21,7 @@ from django.urls import include, path
 urlpatterns = [
     path('adm/', admin.site.urls),
     path('', include('tcc.urls')),
-    path('profile/',include('usuarios.urls'))
+    path('usuarios/',include('usuarios.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

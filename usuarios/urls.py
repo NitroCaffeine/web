@@ -3,9 +3,9 @@ from django.urls import path, reverse_lazy
 
 from . import views
 
-app_name = 'usuarios'
-
 urlpatterns = [
+    path('listar/', views.listar, name='listar'),
+    path('criar/', views.criar, name='criar'),
     path('login/', auth_views.LoginView.as_view(
         template_name='usuarios/login.html',
         extra_context={'titulo': 'Autenticação'}
