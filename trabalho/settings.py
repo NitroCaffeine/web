@@ -275,7 +275,7 @@ STATIC_ROOT = BASE_DIR / 'static'
 
 
 MEDIA_URL = '/uploads/'
-MEDIA_ROOT = BASE_DIR / 'uploads'
+MEDIA_ROOT = BASE_DIR / 'uploads' 
 
 LOGIN_REDIRECT_URL = 'tcc:home'
 LOGIN_URL = 'usuarios:login'
