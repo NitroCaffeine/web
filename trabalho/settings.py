@@ -276,7 +276,7 @@ STATICFILES_DIRS = [
 STATIC_ROOT = BASE_DIR / 'static'
 
 MEDIA_URL = '/uploads/'
-MEDIA_ROOT = BASE_DIR / 'uploads'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads').replace('\\', '/')
 
 LOGIN_REDIRECT_URL = 'tcc:home'
 LOGIN_URL = 'usuarios:login'
