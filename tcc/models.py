@@ -29,7 +29,7 @@ class Curso(models.Model):
     )
 
     nome = models.CharField(max_length=50)
-    modalidade = models.CharField(max_length=20, choices=cursos, blank=False, null=False)
+    modalidade = models.CharField(max_length=30, choices=cursos, blank=False, null=False)
 
     def __str__(self):
         return self.nome

@@ -270,13 +270,12 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / 'base_static'
-]
 STATIC_ROOT = BASE_DIR / 'static'
 
+
+
 MEDIA_URL = '/uploads/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads').replace('\\', '/')
+MEDIA_ROOT = BASE_DIR / 'uploads' 
 
 LOGIN_REDIRECT_URL = 'tcc:home'
 LOGIN_URL = 'usuarios:login'
