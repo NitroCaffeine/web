@@ -1,9 +1,12 @@
 from django.contrib import messages
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.forms import PasswordChangeForm
-from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
+from django.shortcuts import redirect, render
+from django.views.generic.edit import CreateView
+
 from .forms import UserForm
+
 
 # Create your views here.
 def change_password(request):
@@ -41,7 +44,7 @@ def criar(request):
 
 def atualizar(request, id):
     user = User.objects.get(id=id)
-    form = UserForm(initial={'title': user.title, 'description': user.description, 'author': user.author, 'year': user.year})
+    form = UserForm(initial={'username': user.username,'last_name': user.last_name})
     if request.method == "POST":  
         form = UserForm(request.POST, instance=user)  
         if form.is_valid():  
