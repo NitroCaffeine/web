@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Links website</title>
+    <style>
+
+      body {
+          background-image: url(https://www.w3schools.com/howto/img_link_tree_template1_bg.jpg); /* The image used for background*/
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-position: center; /* Center the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+      }
+
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .image-container {
+        text-align: center;
+        width: 100%;
+      }
+
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 10%;
+
+      .link {
+        min-width: 50% !important;
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 768px) {
+      .container {
+          max-width: 720px;
+        }
+
+      .link {
+          width: 100%;
+        }
+      }
+      @media (min-width: 576px) {
+      .container {
+          max-width: 540px;
+        }
+      }
+
+      .w3-purple, .w3-hover-purple:hover {
+        color: #fff!important;
+        background-color: rgba(156, 39, 176, 0.6) !important;
+      }
+
+    </style>
+  </head>
+
+  <body class="w3-white">
+    <!-- Content container -->
+    <div class="container">
+      <!-- Image and name container. Change to your picture here. -->
+      <div class="image-container">
+     
+        <div class="links-container">
+          <label class="w3-text-white w3-large" for="name">Nome:</label>
+          <input class="w3-hover-pink w3-large w3-round w3-purple w3-border" type="text" name="name" id="name">
+          <label class="w3-text-white w3-large" for="nota1">Nota 1:</label>
+           <input class=" w3-hover-pink w3-large w3-round w3-purple w3-border" type="number" name="nota1" id="nota1">
+          <label class="w3-text-white w3-large" for="nota2">Nota 2:</label>
+          <input type="number" name="nota2" class=" w3-hover-pink w3-large w3-round w3-purple w3-border" id="nota2">
+          <label class="w3-text-white w3-large" for="nota3">Nota 3:</label>
+          <input type="number" name="nota3" class="w3-hover-pink w3-large w3-round w3-purple w3-border" id="nota3">
+
+          <button type="submit">Enviar</button>
+
+         
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+  
+    <!-- End footer -->
+    </footer>
+
+  </body>
+</html>

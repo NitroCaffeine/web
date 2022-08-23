@@ -1,0 +1,33 @@
+
+body{
+    /* background-color: #191515; */
+    margin: 0;
+}
+
+
+.container-fluid{
+    background-color: #191515;
+    height: 100vh;
+    width: 100vw;
+}
+
+.col-md{
+    height: 15vh;
+    background-color: white;
+}
+
+.nav{
+    margin: 0;
+    background-color: #211B1A;
+    height: 20%;
+   
+}
+
+.nav-item{
+    margin: 0;
+    height: 20%;
+}
+
+main{
+    padding: auto;
+}
